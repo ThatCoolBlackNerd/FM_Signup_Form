@@ -116,13 +116,13 @@ class Form extends Component {
                 return res.json()
               })
               .then(data => {
+                alert(`${data[0].first_name}, thank you for your submission`);
                   this.setState({
                     fname: {value: '', changed: false},
                     lname: {value: '', changed: false},
                     email: {value: '', changed: false},
                     pword: {value: '', changed: false}
                   });
-                  alert(`${data[0].first_name}, thank you for your submission`);
               })
               .catch(error => {
                 alert(`${error}: Please re-submit your form`);
