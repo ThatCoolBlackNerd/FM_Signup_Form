@@ -116,7 +116,8 @@ class Form extends Component {
                 return res.json()
               })
               .then(data => {
-                alert(`${data[0].first_name}, thank you for your submission`);
+                alert(`${data.first_name}, thank you for your submission`);
+                console.log(data);
                   this.setState({
                     fname: {value: '', changed: false},
                     lname: {value: '', changed: false},
