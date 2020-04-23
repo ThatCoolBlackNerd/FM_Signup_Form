@@ -1,0 +1,39 @@
+main {
+    display: flex;     
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    min-height: 200px;    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.description_component {
+    width: 60%;
+    margin-left: 15%;
+}
+
+.spacer {
+    width:10%;
+}
+
+.form_component {
+    width: 45%;
+}
+
+@media (min-device-width : 375px) and (max-width: 812px)  { 
+    main {
+        flex-direction: column;
+    }
+
+    .description_component {
+        width: 65%;
+        margin-left: 0%;
+    }
+
+    .form_component {
+        width: 65%;
+    }
+}
